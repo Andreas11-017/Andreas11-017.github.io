@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout KSI</title>
+        <link rel="stylesheet" href="../basestyle.css">
+        <link rel="stylesheet" href="stylehome.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js" defer></script>
+        <script src="../basescript.js" defer></script>
+    </head>
+    
+    <body>
+        <div class="container-navbar">
+            <h4>Desa Bangun Rejo <br>Kecamatan Gunung Sugih</h4>
+            <input type="checkbox" id="myCheckbox">
+            <div class="container-bt-navbar">
+                    <ul class="dropdown">
+                        <li><a href="#">Beranda</a></li>
+                        <li id="inner-dropdown"><a href="#"><div class="container-list-info" id="button-info">Informasi <i class="material-icons">arrow_drop_down</i></div></a>
+                            <ul>
+                                <li><a href="../infopage1/infopage1.html">Sumber Daya</a></li>
+                                <li><a href="../infopage2/infopage2.html">Mesin Pengupas Jagung</a></li>
+                                <li><a href="../infopage3/infopage3.html">Briket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../aboutpage/aboutpage.html">Tentang Desa</a></li>
+                    </ul>
+            </div>
+            <label for="myCheckbox"><i class="material-icons">menu</i></label>
+        </div>
+        <div class="container-content">
+            <div class="container-carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev"><i class="material-icons">arrow_left</i></button>
+                <button class="carousel-button next" data-carousel-button="next"><i class="material-icons">arrow_right</i></button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="src/slide11.PNG" alt="Welcome">
+                    </li>
+                    <li class="slide">
+                        <img src="src/slide2.PNG" alt="Welcome">
+                    </li>
+                    <li class="slide">
+                        <img src="src/slide3.PNG" alt="Welcome">
+                    </li>
+                </ul>
+            </div>
+            <h2>INFORMASI</h2>
+            <div class="container-info">
+                <a href="../infopage1/infopage1.html">
+                    <div class="container-info-item">
+                        <div class="imageborder">
+                            <img id="img1" src="src/sumberdaya.png">
+                        </div>
+                        <h3>SUMBER DAYA DESA</h3>
+                        <p style="color: inherit; width: 85%;">
+                            Ketahui berbagai sumber daya yang menopang desa Bangun Rejo.
+                        </p>
+                    </div>
+                </a>
+                <a href="../infopage2/infopage2.html">
+                    <div class="container-info-item">
+                        <div class="imageborder">
+                            <img id="img2" src="src/gears.png">
+                        </div>
+                        <h3>MESIN PENGUPAS JAGUNG</h3>
+                        <p style="color: inherit; width: 85%;">
+                            Mesin yang dapat membantu dalam mengupas jagung secara efektif.
+                        </p>
+                    </div>
+                </a>
+                <a href="../infopage3/infopage3.html">
+                    <div class="container-info-item">
+                        <div class="imageborder">
+                            <img id="img3" src="src/briket.png">
+                        </div>
+                        <h3>BRIKET</h3>
+                        <p style="color: inherit; width: 75%;">
+                            Memanfaatkan limbah bonggol jagung untuk membuat bahan bakar alternatif yang ramah lingkungan.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="stylefooter">
+        <h3>Desa Bangun Rejo</h3>
+        <p>
+            28F6+84X, Bangun Rejo, Gunung Sugih, <br>
+            Central Lampung Regency, <br>
+            Lampung 34153 
+        </p>
+        <a href="https://www.instagram.com/kampung_bangunrejo/">Instagram <i class="fa fa-instagram"></i></a>
+        <p>© Copyright 2024 . Desa Bangun Rejo. All Right Reserved.</p>
+    </footer>
+    </body>
+</html>
